@@ -20,16 +20,18 @@ textarea {
   border-radius: 0;
   border-bottom: 10px solid black;
 }
-
+/* styling added was to fix small errors in the starter code. either to improve
+   responsiveness or remove anything unnessesary*/
 .description {
   padding-top: 5px;
   white-space: normal;
-  border-style: ridge;
+  border-style: solid;
   min-height: 80px;
 }
 
 .description p {
   min-height: 53px;
+  white-space: normal;
 }
 
 .time-block {
@@ -40,7 +42,7 @@ textarea {
   white-space: pre-wrap;
   margin-top: 10px;
 }
-
+/* centered conent*/
 .hour {
   background-color: #ffffff;
   color: #000000;
@@ -49,16 +51,17 @@ textarea {
   justify-content: center;
   align-items: center;
 }
-
+/* centered content, transition was added for the lock*/
 .saveBtn {
   background-color: #06aed5;
   color: white;
   display: flex;
   justify-content: center;
   align-items: center;
+  transition: all 0.3s ease-in-out;
   font-size: 30px;
 }
-
+/* on smaller viewports the radius will not show.*/
 @media screen and (min-width: 600px) {
   .saveBtn {
     border-left: 1px solid black;
