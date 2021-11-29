@@ -18,6 +18,10 @@ Using Jquery, Momentjs, and bootstrap, I first fixed some responsivness issues f
 
 ## **Examples**
 
+
+https://user-images.githubusercontent.com/82281061/143932181-3d4a2237-cbad-41a3-8242-1d211284a3b6.mp4
+
+
 ## **Installation**
 
 Developed with HTML, CSS, js through Visual Studio Code.
