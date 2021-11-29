@@ -28,3 +28,27 @@ setInterval(function () {
     currentHour = parseInt(moment().format('HH'));
     updateColors();
 }, (1000 * 60));
+
+//enable editing tasks
+$(".description").on("click", "p", function() {
+  // get current text of p element
+  var text = $(this).text().trim();
+
+  // replace p element with a new textarea
+  var textInput = $("<textarea>").addClass("form-control").val(text);
+  $(this).replaceWith(textInput);
+
+});
+
+$(".time-block").on("click", ".saveBtn", function(){
+    var timeblock = $(this).parent();
+    var description = $(timeblock).find(".form-control").val();
+
+    
+    var taskP = $("<p>")
+    .text(description);
+
+  // replace textarea with new content
+  $(timeblock).find(".form-control").replaceWith(taskP);
+    
+});

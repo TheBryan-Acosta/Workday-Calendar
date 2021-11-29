@@ -28,6 +28,10 @@ textarea {
   min-height: 80px;
 }
 
+.description p {
+  min-height: 53px;
+}
+
 .time-block {
   border-radius: 15px;
 }
