@@ -94,9 +94,6 @@ $(".time-block").on("click", ".saveBtn", function(){
   // replace textarea with new content
     $(timeblock).find(".form-control").replaceWith(taskP);
 
-    if(!Descpid || !descriptionText){
-        return false;
-    }
     userDescriptions[Descpid] = descriptionText;
     localStorage.setItem("userDescriptions", JSON.stringify(userDescriptions));
 });
